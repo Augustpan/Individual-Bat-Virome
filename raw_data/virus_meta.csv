@@ -1,0 +1,42 @@
+virus_name,virus_name_abbr,order,virus_family,virus_of_concern
+Bat anellovirus BtSY1,BtAnV,38,Anelloviridae,No
+Bat astrovirus BtSY1,BtAstV1,9,Astroviridae,No
+Bat astrovirus BtSY2,BtAstV2,10,Astroviridae,No
+Bat astrovirus BtSY3,BtAstV3,11,Astroviridae,No
+Bat astrovirus BtSY4,BtAstV4,12,Astroviridae,No
+Bat astrovirus BtSY5,BtAstV5,13,Astroviridae,No
+Bat bocaparvovirus BtSY1,BtBoV,34,Parvoviridae,No
+Bat circovirus BtSY1,BtCV,33,Cicoviridae,No
+Bat coronavirus BtSY1,BtCoV,7,Coronaviridae,No
+Bat coronavirus HKU10,BtCoV-HKU10,5,Coronaviridae,No
+Bat mastadenovirus BtSY1,BtAdV1,39,Adenoviridae,No
+Bat mastadenovirus BtSY2,BtAdV2,40,Adenoviridae,No
+Bat pararubulavirus BtSY1,BtPrV,8,Paramyxoviridae,No
+Bat parvovirus BtSY1,BtPaV1,35,Parvoviridae,No
+Bat parvovirus BtSY2,BtPaV2,36,Parvoviridae,No
+Bat parvovirus BtSY3,BtPaV3,37,Parvoviridae,No
+Bat picornavirus BtSY1,BtPiV1,18,Picornaviridae,No
+Bat picornavirus BtSY2,BtPiV2,19,Picornaviridae,No
+Bat picornavirus BtSY3,BtPiV3,20,Picornaviridae,No
+Bat picornavirus BtSY4,BtPiV4,21,Picornaviridae,No
+Bat picornavirus BtSY5,BtPiV5,22,Picornaviridae,No
+Bat picornavirus BtSY6,BtPiV6,23,Picornaviridae,No
+Bat picornavirus BtSY7,BtPiV7,24,Picornaviridae,No
+Bat picornavirus BtSY8,BtPiV8,25,Picornaviridae,No
+Bat polyomavirus BtSY1,BtPyV,41,Polyomaviridae,No
+Bat RVJ-like rotavirus BtSY1,BtRV1,30,Reoviridae,No
+Bat RVJ-like rotavirus BtSY2,BtRV2,31,Reoviridae,No
+Bat RVJ-like rotavirus BtSY3,BtRV3,32,Reoviridae,No
+Bat sapovirus BtSY1,BtSaV1,14,Caliciviridae,No
+Bat sapovirus BtSY2,BtSaV2,15,Caliciviridae,No
+Bat sapovirus BtSY3,BtSaV3,16,Caliciviridae,No
+Bat SARS-like virus BtSY1,BtCoV-SARS-like1,1,Coronaviridae,Yes
+Bat SARS-like virus BtSY2,BtCoV-SARS-like2,2,Coronaviridae,Yes
+Mammalian orthoreovirus,MRV,26,Reoviridae,Yes
+Rhinolophus bat coronavirus HKU2-like,BtCoV-HKU2-like,4,Coronaviridae,Yes
+Rhinolophus ferrumequinum alphacoronavirus HuB-2013,BtCoV-HuB2013,6,Coronaviridae,No
+Rotavirus A type 1,RVA/type1,27,Reoviridae,Yes
+Rotavirus A type 2,RVA/type2,28,Reoviridae,No
+Rotavirus A type 3,RVA/type3,29,Reoviridae,No
+Rousettus bat coronavirus HKU9,BtCoV-HKU9,3,Coronaviridae,No
+Shanbavirus A,BShV,17,Picornaviridae,No

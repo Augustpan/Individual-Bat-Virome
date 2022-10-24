@@ -1,0 +1,76 @@
+define =
+; Run parameters
+; minim.mdp - used as input into grompp to generate em.tpr
+integrator      = steep         ; Algorithm (steep = steepest descent minimization)
+emtol           = 10.0          ; Stop minimization when the maximum force < 10.0 kJ/mol/nm
+emstep          = 0.01          ; Energy step size
+nsteps          = 500000        ; Maximum number of (minimization) steps to perform
+
+; OUTPUT CONTROL OPTIONS 
+; Output frequency for coords (x), velocities (v) and forces (f)
+nstxout		= 5000
+nstvout		= 0
+nstfout         = 0
+; Output frequency for energies to log file and energy file
+nstlog          = 5000
+nstcalcenergy   = -1 
+nstenergy	= 5000
+; Output frequency and precision for .xtc file
+nstxout-compressed       = 0
+compressed-x-precision   = 1000
+compressed-x-grps        = system
+
+; NEIGHBORSEARCHING PARAMETERS
+; cut-off scheme (Verlet: particle based cut-offs, group: using charge groups)
+cutoff-scheme            = Verlet 
+; nblist update frequency
+nstlist                  = 10
+; ns algorithm (simple or grid)
+ns_type                  = grid
+; Periodic boundary conditions: xyz, no, xy
+pbc                      = xyz
+periodic_molecules       = no
+; Allowed energy error due to the Verlet buffer in kJ/mol/ps per atom,
+; a value of -1 means: use rlist
+verlet-buffer-tolerance  = 0.005 
+; nblist cut-off
+rlist                    = 1.2
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+; Method for doing electrostatics
+coulombtype              = PME 
+rcoulomb-switch          = 0
+rcoulomb                 = 1.2
+; Method for doing Van der Waals
+vdw-type                 = Cut-off 
+vdw-modifier             = Force-switch 
+; cut-off lengths
+rvdw-switch              = 1.0
+rvdw                     = 1.2
+; Apply long range dispersion corrections for Energy and Pressure
+DispCorr                 = No
+; Spacing for the PME/PPPM FFT grid
+fourierspacing           = 0.12
+
+; OPTIONS FOR BONDS
+constraints              = none 
+; Type of constraint algorithm
+constraint-algorithm     = Lincs
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+; Temperature coupling
+tcoupl		= no 
+tc-grps		= system
+tau_t		= 0.1	  
+ref_t		= 300 
+; Pressure coupling
+Pcoupl              = no 
+Pcoupltype          = isotropic
+tau_p               =  0.5
+compressibility     =  4.5e-5
+ref_p               =  1.0
+
+; Velocity generation
+gen_vel		= no 
+gen_temp	= 300 
+gen_seed	= -1	

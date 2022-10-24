@@ -1,0 +1,34 @@
+# various backbone RMSD
+# ACE
+rmsd-ace:  RMSD REFERENCE=rmsd-ACE.pdb TYPE=OPTIMAL NOPBC
+# RBD
+rmsd-rbd: RMSD REFERENCE=rmsd-RBD.pdb TYPE=OPTIMAL NOPBC
+# INTERFACIAL rmsd
+rmsd-inter: RMSD REFERENCE=rmsd-INTER.pdb TYPE=OPTIMAL NOPBC
+
+# salt bridges
+# RCOO- group of ASP (D) /GLU (E)
+# RHN3+ from LYS (K) or (RNHC(NH2)2+) of ARG
+
+# D12-K682 inter (equal to D30-K417, Temmam et al. 2022)
+# NOTE: ATOM ID of N of K417 should be 10812 rather than 10821, Temmam et al. 2022
+s1-1: DISTANCE NOPBC ATOMS=188,10825
+s1-2: DISTANCE NOPBC ATOMS=187,10825
+
+# K13-E17 intra ACE2 (equal to K31-E35, Temmam et al. 2022)
+s4-1: DISTANCE NOPBC ATOMS=207,276
+s4-2: DISTANCE NOPBC ATOMS=207,275
+
+# D20-K335 intra ACE2 (equal to D38-K353, Temmam et al. 2022)
+s5-1: DISTANCE NOPBC ATOMS=313,5301
+s5-2: DISTANCE NOPBC ATOMS=312,5301
+
+# D30/K417  ok
+# E35/K493  BANAL-236 CoV
+# D38/K493  ?
+# K31/E35   ok
+# D38/K353  ok
+
+# print stuff
+PRINT ARG=rmsd-ace,rmsd-rbd,rmsd-inter FILE=COLVAR_RMSD STRIDE=1
+PRINT ARG=s1-1,s1-2,s4-1,s4-2,s5-1,s5-2 FILE=COLVAR_SB STRIDE=1
