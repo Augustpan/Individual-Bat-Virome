@@ -2,6 +2,10 @@
 
 This repository contains codes and data of the manuscript "Wang et al. (2022) The viromes of individual Chiroptera reveal the co-infection, spillover and emergence risk of potential zoonotic viruses".
 
+## Viral genome sequences
+
+We are still uploading raw sequences and assembled genome sequences to NCBI. We will provide accession numbers of these data ASAP. Currently, genome sequences of viruses, as well as bat COI gene sequences are stored in this repository. See the `sequences` folder.
+
 ## Run
 
 1. To reproduce the statistical analyses in our study, pls run the R codes in `R` folder. The script `virus_table_cleaning.R` should be run first.
@@ -12,6 +16,4 @@ This repository contains codes and data of the manuscript "Wang et al. (2022) Th
 
 ## Note
 
-1. Genome sequences of viruses, as well as bat COI gene sequences will be stored in this repository until NCBI accessions become available. See the `sequences` folder.
-
-2. For any technical questions, please write to yfpan21 at m.fudan.edu.cn
+For any technical questions, please write to yfpan21 at m.fudan.edu.cn
